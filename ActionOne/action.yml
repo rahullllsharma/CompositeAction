@@ -25,19 +25,16 @@ runs:
         python -m pip install --upgrade pip
         python -m pip install pipx 
         python -m pipx ensurepath
-        shell: bash
+      shell: bash
 
     - name: Install Poetry with pipx
-      run: |
-        pipx install poetry==${{ inputs.poetry-version }}
-        shell: bash
+      run: pipx install poetry==${{ inputs.poetry-version }}
+      shell: bash
 
     - name: Install dependencies
-      run: |
-        poetry install
-        shell: bash
+      run: poetry install
+      shell: bash
 
     - name: Run Tests
-      run: |
-        poetry run pytest
-        shell: bash
+      run: poetry run pytest
+      shell: bash
