@@ -41,7 +41,7 @@ runs:
       shell: bash
 
     - name: Run Flake8
-      run: poetry run flake8
+      run: poetry run flake8 .
       shell: bash
 
     - name: Run isort
