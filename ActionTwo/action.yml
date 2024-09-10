@@ -49,5 +49,5 @@ runs:
       shell: bash
 
     - name: Run mypy
-      run: poetry run mypy 
+      run: poetry run mypy .
       shell: bash
