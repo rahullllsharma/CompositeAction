@@ -49,5 +49,5 @@ runs:
       shell: bash
 
     - name: Run mypy
-      run: poetry run mypy ActionTwo/
+      run: poetry run mypy CompositeAction/ActionTwo/
       shell: bash
