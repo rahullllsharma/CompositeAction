@@ -35,6 +35,6 @@ runs:
       run: poetry install
       shell: bash
 
-    - name: Run Tests
+    - name: Run Test
       run: poetry run pytest
       shell: bash
