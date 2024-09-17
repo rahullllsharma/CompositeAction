@@ -1,4 +1,4 @@
-name: "Run Tests"
+name: "Run Test"
 description: "Sets up Python environment, installs dependencies using Poetry, and runs tests using pytest"
 
 inputs:
